@@ -239,6 +239,13 @@ audio{
     left: 1000px;
     opacity: 50%;
 }
+h7{
+    display: center;
+    position: fixed;
+    top: 550px;
+    left: 1050px;
+    opacity: 50%;
+}
 
 /*Les cartes */
 .conta{
