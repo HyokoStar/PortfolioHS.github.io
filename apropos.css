@@ -7,7 +7,7 @@
 /* */
 body{
     min-height: 100vh;
-    background: url(city.gif) no-repeat;
+    background: url(retro.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     cursor: url("click.png"), pointer;
@@ -20,14 +20,26 @@ h4{
     text-align: center;
     color: #fff;
 }
+h4::selection{
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
+}
 h3{
+    color: #fff;
+}
+h3::selection{
+    background-color: rgba(251, 255, 0, 0.473);
     color: #fff;
 }
 h1{
     color: #fff;
 }
 h1::selection{
-    background-color: red;
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
+}
+p::selection{
+    background-color: rgba(251, 255, 0, 0.473);
     color: #fff;
 }
 
@@ -120,14 +132,19 @@ h1::selection{
     text-align: center;
     line-height: 50px;
 }
+span::selection{
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
+}
 
 /* block */
 section{
     margin: 8%;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 20px;
-    background-color: rgba(173, 216, 230, 0.651);
+    background-color: rgba(255, 255, 255, 0.164);
 }
+
 
 /* Box */
 .container{
@@ -155,6 +172,28 @@ section{
     cursor: url("clicker.png"), pointer;  /* souris */
 }
 
+
+.gallery{
+    display: flex;
+    gap: 1rem;
+}
+.gallery>div {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+img{
+    transition: all .5s;
+}
+img:hover{
+    transform: scale(1.4) rotate(12deg);
+    cursor: url("clicker.png"), pointer;
+}
+img::selection{
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
+}
+
 hr {
     border: none;
     border-top: 5px double #ffffff48;
@@ -171,4 +210,84 @@ hr::after {
     padding: 0 4px;
     position: relative;
     top: -13px;
+}
+
+.cont{
+    width: 90%;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cont:hover{
+    cursor: url("click.png"), pointer;
+}
+
+marquee{
+    color: #fff;
+}
+marquee::selection{
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
+}
+
+audio{
+    display: center;
+    position: fixed;
+    top: 550px;
+    left: 1000px;
+    opacity: 50%;
+}
+
+/*Les cartes */
+.conta{
+    display: flex;
+    align-items: center;
+    left: 50px;
+    
+}
+.card{
+    height: 400px;
+    width: 500px;
+    margin: 100px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.card:hover{
+    cursor: url("clicker.png"), pointer;  /* souris */
+}
+
+.intro{
+    height: 200px; /* 200px */
+    width: 455px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 718px;
+    bottom: 0px;
+    background: rgb(27, 27, 27, .5);
+    color: #fff;
+    text-align: right;
+    transition: .5s;
+}
+h6{
+    font-size: larger;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.card:hover .intro{
+    height: 200px;
+    bottom: 10px;
+    background: black;
+}
+.card:hover h6{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
 }
