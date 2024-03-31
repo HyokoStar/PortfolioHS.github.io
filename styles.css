@@ -10,13 +10,27 @@ body{
     background: url(city.gif) no-repeat;
     background-size: cover;
     background-position: center;
+    cursor: url("click.png"), pointer;
+}
+
+h2{
+    color: #fff;
+}
+h2::selection{
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
 }
 
 h1{
-    color: #fff;
+    background: linear-gradient(90deg, #0400ff75, #ff000085);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: center;
+    text-align: center;
 }
 h1::selection{
-    background-color: red;
+    background-color: rgba(251, 255, 0, 0.473);
     color: #fff;
 }
 
@@ -109,6 +123,10 @@ h1::selection{
     text-align: center;
     line-height: 50px;
 }
+span::selection{
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
+}
 
 /* .sidebar .link-name {
     opacity: 0;
@@ -128,13 +146,21 @@ h1::selection{
 }
 */
 
+img::selection{
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
+}
 
 /* block */
 section{
     margin: 8%;
-    border-radius: 20px;
-    padding: 20px;
-    background-color: rgba(173, 216, 230, 0.651);
+    position: relative;
+    left: 354px;
+    bottom: 140px;
+    width: 30%;
+    border-radius: 50px;
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.164);
 }
 
 /* Box */
@@ -198,3 +224,27 @@ p{
     z-index: 100;
 }
 */
+
+marquee{
+    color: #fff;
+}
+marquee::selection{
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
+}
+
+img{
+    transition: all .5s;
+}
+img:hover{
+    transform: scale(1.4) rotate(12deg);
+    cursor: url("clicker.png"), pointer;
+}
+
+audio{
+    display: center;
+    position: fixed;
+    top: 550px;
+    left: 1000px;
+    opacity: 50%;
+}
