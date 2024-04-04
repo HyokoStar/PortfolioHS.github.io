@@ -82,7 +82,7 @@ h1::selection{
     color: #fff;
     text-align: center;
     line-height: 40px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: .5s;
 }
 
@@ -92,6 +92,12 @@ h1::selection{
 
 .sidebar .list{
     margin-top: 10px;
+}
+
+.sidebar .grandLogo{
+    margin-top:175%;
+    margin-bottom: 0;
+
 }
 .list .list-item{
     list-style: none;
@@ -155,7 +161,7 @@ img::selection{
 section{
     margin: 8%;
     position: relative;
-    left: 354px;
+    left: 27%;
     bottom: 140px;
     width: 30%;
     border-radius: 50px;
@@ -244,14 +250,14 @@ img:hover{
 audio{
     display: center;
     position: fixed;
-    top: 550px;
-    left: 1000px;
+    top: 90%;
+    left: 80%;
     opacity: 50%;
 }
 h7{
     display: center;
     position: fixed;
-    top: 550px;
-    left: 1050px;
+    top: 85%;
+    left: 80%;
     opacity: 50%;
 }

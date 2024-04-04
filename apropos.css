@@ -91,7 +91,7 @@ p::selection{
     color: #fff;
     text-align: center;
     line-height: 40px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: .5s;
 }
 
@@ -101,6 +101,10 @@ p::selection{
 
 .sidebar .list{
     margin-top: 10px;
+}
+.sidebar .grandLogo{
+    margin-top:175%;
+    margin-bottom: 0;
 }
 .list .list-item{
     list-style: none;
@@ -235,15 +239,15 @@ marquee::selection{
 audio{
     display: center;
     position: fixed;
-    top: 550px;
-    left: 1000px;
+    top: 90%;
+    left: 80%;
     opacity: 50%;
 }
 h7{
     display: center;
     position: fixed;
-    top: 550px;
-    left: 1050px;
+    top: 85%;
+    left: 80%;
     opacity: 50%;
 }
 
