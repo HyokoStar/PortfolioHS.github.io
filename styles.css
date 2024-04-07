@@ -233,6 +233,7 @@ p{
 
 marquee{
     color: #fff;
+    animation-delay: 15s;
 }
 marquee::selection{
     background-color: rgba(251, 255, 0, 0.473);

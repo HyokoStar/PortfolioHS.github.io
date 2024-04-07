@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 /* */
 body{
@@ -15,6 +16,8 @@ body{
 
 p{
     text-align: center;
+    color: #fff;
+    font-size: larger;
 }
 h4{
     text-align: center;
