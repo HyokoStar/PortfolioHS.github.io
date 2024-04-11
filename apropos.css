@@ -256,6 +256,7 @@ h7{
 
 /*Les cartes */
 .conta{
+    padding-left: 15%; /* déplacer les cards */
     display: flex;
     align-items: center;
     left: 50px;
