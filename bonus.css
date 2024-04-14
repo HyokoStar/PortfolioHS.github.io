@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* */
+body{
+    min-height: 100vh;
+    background: url(waiting.gif) no-repeat;
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    background-position: center;
+}
+marquee{
+    color: #fff;
+    animation-delay: 15s;
+}
+marquee::selection{
+    background-color: rgba(251, 255, 0, 0.473);
+    color: #fff;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    text-shadow: rgb(251, 255, 0) 0.1em 0.1em 0.2em;
+}
+h2{
+    color: #fff;
+}
+h3{
+    color: #fff;
+    font-size: 13px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* le choix des cartes */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 40%;
+  }
+  
+  .cards .red {
+    background-color: rgb(226, 180, 26);
+  }
+  
+  .cards .blue {
+    background-color: rgb(164, 52, 255);
+  }
+  
+  .cards .green {
+    background-color: rgb(255, 70, 85);
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .card:not(:hover){
+    filter: blur(2px);
+    transform: scale(0.9, 0.9);
+  }
+
+  /*les étoiles*/
+  .rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: rgb(204, 204, 204);
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: rgb(226, 180, 26);
+    transition: color 0.3s;
+  }
