@@ -262,3 +262,14 @@ h7{
     left: 83%;
     opacity: 50%;
 }
+.bonus{
+    color: #ffffff09 ;
+    text-decoration: none;
+    padding-left: 48%;
+    display: flex;
+    font-size: 50px;
+}
+h8{
+    text-decoration: none;
+    color: transparent;
+}
